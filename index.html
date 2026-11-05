@@ -35,7 +35,6 @@ nav .cta{text-decoration:underline;text-underline-offset:3px}
 .cur{display:inline-block;width:2px;height:1em;background:var(--ink);vertical-align:middle;margin-left:3px;animation:blink 1s step-end infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .pills{display:flex;flex-wrap:wrap;gap:8px 8px;opacity:0;transform:translateY(8px);transition:opacity .4s ease,transform .4s ease}
-.pills.on{opacity:1;transform:none}
 .pill{display:inline-flex;align-items:center;gap:10px;background:var(--paper);color:var(--ink);border:1px solid var(--soft);border-radius:999px;padding:7px 18px;font:inherit;font-size:clamp(13px,1.2vw,15px);white-space:nowrap;text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
 .pill:hover{background:var(--ink);color:var(--wall)}
 .pill.line{background:transparent;border-color:var(--ink)}
@@ -95,7 +94,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset
       <a class="pill" href="#contacto">Cuéntanos tu idea</a>
       <a class="pill" href="#servicios">Ver qué hacemos</a>
       <a class="pill" href="#casos">Ver casos</a>
-      <button class="pill line" id="copy" type="button">Escríbenos: <u>contacto@muegano.network</u>
+      <button class="pill line" id="copy" type="button">Escríbenos: <u>contacto@muegano.com.mx</u>
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="1.5" y="1.5" width="7" height="7" rx="1"/></svg></button>
     </div>
   </div>
@@ -172,7 +171,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset
 <section class="black final" id="contacto">
   <div class="wrap">
     <h2>Dinos qué quieres lograr. Nosotros nos encargamos del cómo.</h2>
-    <div style="display:flex;flex-wrap:wrap;gap:8px"><a class="pill" href="mailto:contacto@muegano.network">contacto@muegano.network</a><a class="pill" href="https://wa.me/525624860041">+52 56 2486 0041</a><a class="pill" href="https://wa.me/525523084641">+52 55 2308 4641</a></div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a class="pill" href="mailto:contacto@muegano.com.mx">contacto@muegano.com.mx</a><a class="pill" href="https://wa.me/525624860041">+52 56 2486 0041</a><a class="pill" href="https://wa.me/525523084641">+52 55 2308 4641</a></div>
   </div>
 </section>
 
@@ -236,7 +235,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset
   var toast=document.getElementById('toast');
   document.getElementById('copy').addEventListener('click',function(){
     function ok(){toast.classList.add('on');setTimeout(function(){toast.classList.remove('on')},1800)}
-    try{navigator.clipboard.writeText('contacto@muegano.network').then(ok,ok)}catch(e){ok()}
+    try{navigator.clipboard.writeText('contacto@muegano.com.mx').then(ok,ok)}catch(e){ok()}
   });
 })();
 </script>
