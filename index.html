@@ -159,14 +159,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{o
   <div class="f full"><button class="btn mag" id="sb" type="submit" data-track="form_submit" style="align-self:flex-start">Enviar mensaje →</button></div>
   <div class="ok2" id="ok" role="status" tabindex="-1"><b>Listo.</b> Abrimos tu app de correo con el mensaje armado. Si no se abrió, escríbenos por WhatsApp o a contacto@muegano.com.mx.</div>
  </form>
- <div class="ch"><a class="btn o" href="mailto:contacto@muegano.network" data-track="click_email">contacto@muegano.network</a><a class="btn o" href="https://wa.me/525624860041" data-track="click_whatsapp_1">+52 56 2486 0041</a><a class="btn o" href="https://wa.me/525523084641" data-track="click_whatsapp_2">+52 55 2308 4641</a></div>
+ <div class="ch"><a class="btn o" href="mailto:contacto@muegano.com.mx" data-track="click_email">contacto@muegano.com.mx</a><a class="btn o" href="https://wa.me/525624860041" data-track="click_whatsapp_1">+52 56 2486 0041</a><a class="btn o" href="https://wa.me/525523084641" data-track="click_whatsapp_2">+52 55 2308 4641</a></div>
 </div></section>
 </main>
 
 <footer class="px"><div class="wrap" style="display:contents">
  <div><div class="big">muégano<i style="color:var(--gold);font-style:normal">®</i></div><p style="max-width:34ch;opacity:.8">Publicidad, producción cinematográfica y crecimiento para empresas de cualquier tamaño.</p></div>
  <div><h4>Navegación</h4><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#proceso">Proceso</a><a href="#porque">Por qué Muégano</a></div>
- <div><h4>Contacto</h4><a href="mailto:contacto@muegano.network">contacto@muegano.network</a><a href="https://wa.me/525624860041">+52 56 2486 0041</a><a href="https://wa.me/525523084641">+52 55 2308 4641</a><a href="https://muegano.com.mx">muegano.com.mx</a><!-- REDES SOCIALES: agregar enlaces reales aquí --></div>
+ <div><h4>Contacto</h4><a href="mailto:contacto@muegano.com.mx">contacto@muegano.com.mx</a><a href="https://wa.me/525624860041">+52 56 2486 0041</a><a href="https://wa.me/525523084641">+52 55 2308 4641</a><a href="https://muegano.com.mx">muegano.com.mx</a><!-- REDES SOCIALES: agregar enlaces reales aquí --></div>
  <div class="lg"><span>© 2026 Muégano. Todos los derechos reservados.</span><details><summary style="cursor:pointer">Aviso de privacidad</summary><p>Usamos los datos del formulario solo para responderte. Texto legal pendiente de revisión por Muégano.</p></details></div>
 </div></footer>
 
@@ -222,7 +222,7 @@ fm.addEventListener('submit',function(e){e.preventDefault();
  var sb=document.getElementById('sb');sb.disabled=true;sb.textContent='Enviando…';
  setTimeout(function(){var s=document.getElementById('s').value,t=document.getElementById('t').value,body='Nombre: '+n+'\nCorreo: '+m+'\nTeléfono: '+t+'\nInterés: '+s+'\n\n'+g;
   track('form_success',{interest:s});document.getElementById('cw').classList.add('sent');var ok=document.getElementById('ok');ok.focus();
-  location.href='mailto:contacto@muegano.network?subject='+encodeURIComponent('Proyecto: '+n)+'&body='+encodeURIComponent(body)},700)});
+  location.href='mailto:contacto@muegano.com.mx?subject='+encodeURIComponent('Proyecto: '+n)+'&body='+encodeURIComponent(body)},700)});
 })();
 </script>
 </body>
