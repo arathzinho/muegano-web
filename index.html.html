@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MUÉGANO — Publicidad rodada como cine</title>
+<meta name="description" content="Agencia de publicidad con producción cinematográfica, gestión de redes con business intelligence y escalamiento de negocio. Para empresas de cualquier tamaño y giro.">
+<meta property="og:title" content="MUÉGANO — Publicidad rodada como cine">
+<meta property="og:description" content="Producción cinematográfica, redes con datos y estrategia para vender más.">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_MX">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--wall:#f7edd5;--ink:#2a1a08;--paper:#fffaf0;--soft:rgba(60,35,5,.2);--dark:#4a2905;--darkink:#fbf3e0;--gold:#edb60e;
+--mon:#cfc9bb;--mon2:#b9b3a4;--glass:#2b2d2e;--suit:#7a7c76;--suit2:#686a65;--shirt:#f4f3ee;--eye:#fbe6ee;
+--d:'Bricolage Grotesque','Arial Black',Arial,sans-serif;--b:'Inter Tight','Helvetica Neue',Arial,sans-serif;--e:cubic-bezier(.2,.7,.1,1);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--wall:#17120b;--ink:#f5ebd3;--paper:#241a0d;--soft:rgba(255,240,200,.2);--dark:#000;--mon:#a8a293;--mon2:#8f897b;--suit:#4a4b47;--suit2:#3d3e3b;--shirt:#d9d8d2}}
+:root[data-theme="dark"]{--wall:#17120b;--ink:#f5ebd3;--paper:#241a0d;--soft:rgba(255,240,200,.2);--dark:#000;--mon:#a8a293;--mon2:#8f897b;--suit:#4a4b47;--suit2:#3d3e3b;--shirt:#d9d8d2}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--wall);color:var(--ink);font:400 17px/1.5 var(--b);-webkit-font-smoothing:antialiased;opacity:0;transition:opacity .8s}body.ok{opacity:1}
+a{color:inherit}h1,h2,h3{font-family:var(--d);margin:0;line-height:.98;letter-spacing:-.04em;font-weight:800}
+.px{padding-left:clamp(20px,4vw,48px);padding-right:clamp(20px,4vw,48px)}.wrap{max-width:1240px;margin:0 auto}
+section{padding-top:clamp(70px,11vw,150px);padding-bottom:clamp(70px,11vw,150px)}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em}.w>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--e);transition-delay:calc(var(--i)*55ms)}.in .w>span{transform:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--e),transform .9s var(--e);transition-delay:var(--dl,0s)}.in.rv,.in .rv{opacity:1;transform:none}
+#bar{position:fixed;top:0;left:0;right:0;height:3px;background:var(--gold);transform-origin:left;transform:scaleX(0);z-index:30}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding-top:calc(16px + env(safe-area-inset-top,0px));padding-bottom:16px;font-size:16px}
+.logo{font:800 clamp(22px,2.4vw,30px)/1 var(--d);letter-spacing:-.05em;text-decoration:none}.logo i{color:var(--gold);font-style:normal}
+.nl{display:flex;gap:28px}.nl a{text-decoration:none;position:relative}.nl a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--e)}.nl a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--wall);font:500 16px var(--b);text-decoration:none;cursor:pointer;transition:background .3s,color .3s,transform .3s var(--e)}
+.btn:hover{background:var(--gold);border-color:var(--gold);color:#2a1a08}.btn.o{background:transparent;color:var(--ink)}.btn.o:hover{background:var(--ink);color:var(--wall);border-color:var(--ink)}
+.mb{display:none;background:none;border:0;color:inherit;font:inherit;padding:8px 0;cursor:pointer}
+#menu{position:fixed;inset:0;z-index:19;background:var(--wall);display:flex;flex-direction:column;justify-content:center;gap:14px;padding:0 24px;opacity:0;pointer-events:none;transition:opacity .4s}#menu.on{opacity:1;pointer-events:auto}
+#menu a{font:800 clamp(38px,11vw,64px)/1 var(--d);letter-spacing:-.04em;text-decoration:none}
+@media(max-width:760px){.nl,nav .btn{display:none}.mb{display:block}}
+.hero{min-height:100svh;display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:10px;padding-top:110px;padding-bottom:0;overflow:hidden}
+.hero h1{font-size:clamp(46px,8.4vw,128px)}.hero h1 em{font-style:normal;color:var(--gold);-webkit-text-stroke:0}
+.sub{max-width:44ch;font-size:clamp(17px,1.5vw,21px);margin:28px 0}.cta{display:flex;flex-wrap:wrap;gap:12px;padding-bottom:clamp(40px,6vw,80px)}
+.stage{justify-self:center;width:min(100%,560px)}.stage svg{display:block;width:100%;height:auto;max-height:80svh}.pupil{fill:var(--eye)}
+@media(max-width:860px){.hero{grid-template-columns:1fr;align-content:end}.stage{order:-1;width:min(70%,320px)}.hero h1{font-size:clamp(44px,13vw,80px)}}
+.st{font:800 clamp(30px,5.6vw,80px)/1.02 var(--d);letter-spacing:-.04em;max-width:19ch}.st span{opacity:.18;transition:opacity .3s}.st span.on{opacity:1}
+.k{font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:22px;display:block;opacity:.7}
+.svc details{border-top:1.5px solid var(--ink)}.svc details:last-child{border-bottom:1.5px solid var(--ink)}
+.svc summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:70px 1fr 40px;align-items:center;padding:26px 0;font:800 clamp(26px,4.4vw,60px)/1 var(--d);letter-spacing:-.04em;transition:padding .5s var(--e),color .3s}
+.svc summary::-webkit-details-marker{display:none}.svc summary small{font:500 15px var(--b);letter-spacing:0;opacity:.6}.svc summary::after{content:"+";font-size:36px;transition:transform .4s var(--e);justify-self:end}
+.svc details[open] summary::after{transform:rotate(45deg)}.svc summary:hover{padding-left:14px;color:#a8710a}
+.svc .bd{padding:0 0 30px 70px;max-width:62ch;font-size:19px}
+.dark{background:var(--dark);color:var(--darkink);--ink:#fbf3e0}.dark .btn{background:var(--gold);border-color:var(--gold);color:#2a1a08}.dark .btn:hover{background:var(--darkink);border-color:var(--darkink)}
+.mq{overflow:hidden;display:grid;gap:10px;margin:50px 0 0}.mq div{display:flex;gap:12px;width:max-content;will-change:transform}
+.mq span{font:800 clamp(24px,4.2vw,54px)/1 var(--d);letter-spacing:-.04em;padding:.28em .7em;border:1.5px solid var(--soft);border-radius:999px;white-space:nowrap}.mq span:nth-child(3n){background:var(--gold);border-color:var(--gold);color:#2a1a08}
+.wk{border-top:1.5px solid var(--soft)}.wk:last-child{border-bottom:1.5px solid var(--soft)}
+.wk button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:22px 0;font:800 clamp(24px,3.8vw,52px)/1.05 var(--d);letter-spacing:-.04em;transition:padding .5s var(--e),color .3s}
+.wk button:hover,.wk.open button{padding-left:14px;color:var(--gold)}.wk button span{font:500 15px var(--b);letter-spacing:0;color:var(--darkink);opacity:.7}.wk button:focus-visible{outline:2px solid var(--gold)}
+.wk .pn{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--e)}.wk.open .pn{grid-template-rows:1fr}.pn>div{overflow:hidden}
+.pi{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:4px 0 30px}.pi p{margin:0;max-width:46ch}
+.slot{aspect-ratio:16/9;border:1.5px dashed var(--soft);border-radius:6px;display:grid;place-items:center;font-size:14px;opacity:.8;text-align:center;padding:10px}
+@media(max-width:720px){.pi{grid-template-columns:1fr}.svc summary{grid-template-columns:44px 1fr 30px}.svc .bd{padding-left:44px}}
+.ap{list-style:none;margin:0;padding:0 0 0 34px;position:relative}.ap::before,.ap i{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--soft)}.ap i{background:var(--gold);bottom:auto;height:0;top:6px}
+.ap li{position:relative;padding:0 0 clamp(30px,4vw,52px);max-width:60ch}.ap li::before{content:"";position:absolute;left:-34px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--wall);border:2px solid var(--ink)}
+.ap li.on::before{background:var(--gold);border-color:var(--gold)}.ap h3{font-size:clamp(24px,3vw,38px);margin-bottom:6px}.ap p{margin:0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px)}.vs h3{font-size:clamp(22px,2.4vw,32px);margin-bottom:12px}.vs ul{list-style:none;margin:0;padding:0}.vs li{padding:14px 0;border-top:1px solid var(--soft);font-size:18px}.vs .old{opacity:.55}
+@media(max-width:720px){.vs{grid-template-columns:1fr}}
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px}.f{display:flex;flex-direction:column;gap:6px}.f.full{grid-column:1/-1}
+label{font-size:14px;opacity:.8}input,select,textarea{font:inherit;color:inherit;background:transparent;border:0;border-bottom:1.5px solid var(--soft);padding:12px 0;border-radius:0;transition:border-color .3s}
+select option{color:#000}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold)}.er{color:#ffb4a2;font-size:14px;min-height:1.2em}[aria-invalid=true]{border-color:#ffb4a2}
+.ok2{display:none;grid-column:1/-1;padding:22px;border:1.5px solid var(--gold);border-radius:10px}.sent form>*:not(.ok2){display:none}.sent .ok2{display:block}
+@media(max-width:720px){form{grid-template-columns:1fr}}
+.ch{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+footer{padding-top:56px;padding-bottom:calc(36px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px;font-size:15px}footer h4{margin:0 0 10px;font:500 13px var(--b);letter-spacing:.12em;text-transform:uppercase;opacity:.6}footer a{display:block;text-decoration:none;padding:3px 0}footer .big{font:800 clamp(40px,7vw,96px)/.9 var(--d);letter-spacing:-.06em}footer details p{margin:8px 0 0;max-width:46ch;opacity:.8}
+footer .lg{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--soft);padding-top:20px;opacity:.7}
+@media(max-width:720px){footer{grid-template-columns:1fr}}
+.cu{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1.5px solid var(--gold);border-radius:50%;pointer-events:none;z-index:40;transition:width .3s var(--e),height .3s var(--e),margin .3s var(--e),background .3s;display:none}.cu.h{width:64px;height:64px;margin:-32px 0 0 -32px;background:rgba(237,182,14,.18)}
+@media(pointer:fine){.cu{display:block}}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;animation:none!important}.w>span,.rv{transform:none;opacity:1}html{scroll-behavior:auto}.st span{opacity:1}}
+</style>
+</head>
+<body>
+<div id="bar"></div><div class="cu" id="cu" aria-hidden="true"></div>
+<nav class="px"><a class="logo" href="#top">muégano<i>®</i></a>
+<div class="nl"><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#proceso">Proceso</a><a href="#porque">Por qué</a></div>
+<a class="btn mag" href="#contacto" data-track="cta_nav">Hablemos</a><button class="mb" id="mb" aria-expanded="false" aria-controls="menu">Menú</button></nav>
+<div id="menu" aria-label="Menú"><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#proceso">Proceso</a><a href="#porque">Por qué</a><a href="#contacto">Contacto</a></div>
+
+<main id="top">
+<header class="hero px">
+ <div class="in" id="h">
+  <h1 class="sp">Publicidad <em>rodada</em> como cine.</h1>
+  <p class="sub rv" style="--dl:.7s">Producción cinematográfica, redes con datos y estrategia para que más gente te vea y más gente te compre. Directo, sin rodeos.</p>
+  <div class="cta rv" style="--dl:.9s"><a class="btn mag" href="#contacto" data-track="cta_hero_primary">Cuéntanos tu proyecto →</a><a class="btn o mag" href="#trabajos" data-track="cta_hero_secondary">Ver trabajos</a></div>
+ </div>
+ <div class="stage" id="stage" aria-hidden="true"><svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
+  <path d="M70 700C80 560 150 500 250 478L350 478C450 500 520 560 530 700Z" fill="var(--suit)"/>
+  <path d="M250 478L292 520L210 700L140 700C150 580 190 510 250 478Z" fill="var(--suit2)"/><path d="M350 478L308 520L390 700L460 700C450 580 410 510 350 478Z" fill="var(--suit2)"/>
+  <path d="M262 470L300 640L338 470L322 462L300 495L278 462Z" fill="var(--shirt)"/>
+  <path d="M170 392L430 392L455 470L145 470Z" fill="var(--mon2)"/><rect x="185" y="418" width="150" height="14" rx="3" fill="rgba(0,0,0,.35)"/><circle cx="395" cy="430" r="9" fill="none" stroke="rgba(0,0,0,.45)" stroke-width="3"/>
+  <rect x="130" y="60" width="340" height="340" rx="10" fill="var(--mon)"/><rect x="158" y="92" width="284" height="214" rx="26" fill="var(--mon2)"/>
+  <rect id="scr" x="172" y="106" width="256" height="186" rx="22" fill="var(--glass)"/>
+  <ellipse class="pupil" id="eL" cx="250" cy="199" rx="22" ry="29"/><ellipse class="pupil" id="eR" cx="350" cy="199" rx="22" ry="29"/>
+  <rect x="236" y="338" width="128" height="30" rx="3" fill="rgba(0,0,0,.18)"/><text x="300" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="rgba(0,0,0,.55)" letter-spacing="1">MUÉGANO</text></svg></div>
+</header>
+
+<section class="px"><div class="wrap">
+ <span class="k">Filosofía</span>
+ <p class="st" id="stm">Muégano no es solo una agencia de marketing. Es una infraestructura empresarial para que cualquier empresa llegue a más público y venda más.</p>
+</div></section>
+
+<section class="px" id="servicios"><div class="wrap">
+ <span class="k">Servicios</span><h2 class="sp" style="font-size:clamp(36px,6vw,88px);margin-bottom:50px;max-width:14ch">Lo que construimos contigo.</h2>
+ <div class="svc rv">
+  <details name="s" open><summary><small>01</small>Producción de alta gama<span></span></summary><div class="bd">Venimos del cine. Tus anuncios se producen con técnicas y conocimientos cinematográficos, y eso se nota en la calidad frente a una agencia tradicional.</div></details>
+  <details name="s"><summary><small>02</small>Redes con inteligencia<span></span></summary><div class="bd">Monitoreo y gestión de tus redes con herramientas de business intelligence para leer mejor las métricas y acercarte a tus proyecciones. Hacemos upscaling en vistas, ventas o clicks, con llamado a la acción.</div></details>
+  <details name="s"><summary><small>03</small>Escalabilidad de negocio<span></span></summary><div class="bd">Analizamos todos tus recursos, los ponemos en una mesa de debate y planeamos dónde hay oportunidad de generar un ingreso extra, por ejemplo en la postventa.</div></details>
+  <details name="s"><summary><small>04</small>Cualquier giro<span></span></summary><div class="bd">No nos cerramos a un nicho. Variamos el enfoque según lo que cada empresa necesita, de cualquier tamaño o capacidad.</div></details>
+ </div>
+</div></section>
+
+<section class="dark px" id="trabajos"><div class="wrap">
+ <span class="k">Trabajos</span><h2 class="sp" style="font-size:clamp(36px,6vw,88px);margin-bottom:20px;max-width:16ch">Seguro ya los conoces. No sabías quién los hizo.</h2>
+ <p style="max-width:52ch;font-size:19px;margin:0 0 20px">Marcas con las que hemos colaborado.</p>
+ <div class="mq" id="mq" aria-label="Marcas con las que hemos trabajado"><div></div><div></div><div></div></div>
+ <div style="margin-top:clamp(50px,7vw,90px)" id="wks">
+  <div class="wk open"><button aria-expanded="true">La Sonora Santanera<span>Videoclip · cumbia</span></button><div class="pn"><div><div class="pi"><p>“Pena Negra”. Producción de videoclip.</p><div class="slot" data-media="">Espacio para video</div></div></div></div></div>
+  <div class="wk"><button aria-expanded="false">Jah Fabio<span>Videoclip · reggae</span></button><div class="pn"><div><div class="pi"><p>“Man a Rebel”. Producción de videoclip y estrategia de crecimiento en redes.</p><div class="slot" data-media="">Espacio para video</div></div></div></div></div>
+  <div class="wk"><button aria-expanded="false">Lili Zetina<span>Regional mexicano</span></button><div class="pn"><div><div class="pi"><p>“Relatos de mi vida”. Monetización de redes sociales, producción de contenidos y manejo digital.</p><div class="slot" data-media="">Espacio para video</div></div></div></div></div>
+  <div class="wk"><button aria-expanded="false">Crixta y Antidoping<span>Electro reggae · reggae</span></button><div class="pn"><div><div class="pi"><p>Crixta (Argentina): “Creo” y “De mi tierra”, con estrategia de contenido y producción audiovisual. Antidoping: “Aire”, con campañas de crecimiento orgánico en redes.</p><div class="slot" data-media="">Espacio para video</div></div></div></div></div>
+  <div class="wk"><button aria-expanded="false">Cine<span>Premiado en festivales</span></button><div class="pn"><div><div class="pi"><p>“Moriré siendo de ti”: mejor director, mejor cortometraje, mejor actriz y voto del público en el Festival Internacional de Cine de Perú. “Lupe”: favorito del público en Hazlo contra la corrupción 2020.</p><div class="slot" data-media="">Espacio para video</div></div></div></div></div>
+  <div class="wk"><button aria-expanded="false">Teatro<span>CDMX</span></button><div class="pn"><div><div class="pi"><p>“7 mujeres” se extendió varias temporadas y fue reconocida por la Academia Metropolitana de Teatro. También “El último tango”, “El fantasma de Canterville” y “Te guardo un beso”.</p><div class="slot" data-media="">Espacio para imagen</div></div></div></div></div>
+ </div>
+</div></section>
+
+<section class="px" id="proceso"><div class="wrap">
+ <span class="k">Proceso</span><h2 class="sp" style="font-size:clamp(36px,6vw,88px);margin-bottom:56px;max-width:14ch">Del primer café al resultado.</h2>
+ <ol class="ap" id="ap"><i id="api"></i>
+  <li><h3>Escuchamos</h3><p>Entendemos tu negocio, tu público y lo que quieres lograr.</p></li>
+  <li><h3>Ponemos todo en la mesa</h3><p>Revisamos tus recursos existentes y debatimos dónde están las áreas de oportunidad.</p></li>
+  <li><h3>Planeamos</h3><p>Definimos enfoque, mensaje y plan para tu giro y tu tamaño.</p></li>
+  <li><h3>Producimos como cine</h3><p>Grabación y edición con técnicas cinematográficas.</p></li>
+  <li><h3>Publicamos y medimos</h3><p>Gestionamos tus redes y leemos métricas con herramientas de business intelligence.</p></li>
+  <li><h3>Escalamos</h3><p>Impulsamos vistas, ventas y clicks, y buscamos ingresos extra desde la postventa.</p></li>
+ </ol>
+</div></section>
+
+<section class="dark px" id="porque"><div class="wrap">
+ <span class="k">Por qué Muégano</span><h2 class="sp" style="font-size:clamp(36px,6vw,88px);margin-bottom:50px;max-width:15ch">Cualquiera graba y publica. Aquí se nota.</h2>
+ <div class="vs rv"><div class="old"><h3>Agencia tradicional</h3><ul><li>Graba y publica</li><li>Un servicio de contenido</li><li>Mismo enfoque para todos</li></ul></div>
+ <div><h3>Muégano</h3><ul><li>Producción con técnicas cinematográficas</li><li>Gestión y upscaling de redes con business intelligence</li><li>Análisis de recursos y escalabilidad de negocio</li><li>Enfoque que cambia según cada empresa</li></ul></div></div>
+</div></section>
+
+<section class="px" id="contacto"><div class="wrap" id="cw">
+ <span class="k">Contacto</span><h2 class="sp" style="font-size:clamp(40px,8vw,120px);margin-bottom:40px;max-width:13ch">Dinos qué quieres lograr.</h2>
+ <form id="fm" novalidate>
+  <div class="f"><label for="n">Nombre</label><input id="n" name="n" autocomplete="name" required><span class="er" id="en"></span></div>
+  <div class="f"><label for="m">Correo</label><input id="m" name="m" type="email" autocomplete="email" required><span class="er" id="em"></span></div>
+  <div class="f"><label for="t">Teléfono (opcional)</label><input id="t" name="t" type="tel" autocomplete="tel"></div>
+  <div class="f"><label for="s">¿Qué necesitas?</label><select id="s"><option>Producción de video</option><option>Gestión de redes</option><option>Escalar mi negocio</option><option>Aún no lo sé</option></select></div>
+  <div class="f full"><label for="g">Cuéntanos tu proyecto</label><textarea id="g" rows="3" required></textarea><span class="er" id="eg"></span></div>
+  <div class="f full"><button class="btn mag" id="sb" type="submit" data-track="form_submit" style="align-self:flex-start">Enviar mensaje →</button></div>
+  <div class="ok2" id="ok" role="status" tabindex="-1"><b>Listo.</b> Abrimos tu app de correo con el mensaje armado. Si no se abrió, escríbenos por WhatsApp o a contacto@muegano.network.</div>
+ </form>
+ <div class="ch"><a class="btn o" href="mailto:contacto@muegano.network" data-track="click_email">contacto@muegano.network</a><a class="btn o" href="https://wa.me/525624860041" data-track="click_whatsapp_1">+52 56 2486 0041</a><a class="btn o" href="https://wa.me/525523084641" data-track="click_whatsapp_2">+52 55 2308 4641</a></div>
+</div></section>
+</main>
+
+<footer class="px"><div class="wrap" style="display:contents">
+ <div><div class="big">muégano<i style="color:var(--gold);font-style:normal">®</i></div><p style="max-width:34ch;opacity:.8">Publicidad, producción cinematográfica y crecimiento para empresas de cualquier tamaño.</p></div>
+ <div><h4>Navegación</h4><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#proceso">Proceso</a><a href="#porque">Por qué Muégano</a></div>
+ <div><h4>Contacto</h4><a href="mailto:contacto@muegano.network">contacto@muegano.network</a><a href="https://wa.me/525624860041">+52 56 2486 0041</a><a href="https://wa.me/525523084641">+52 55 2308 4641</a><a href="https://muegano.com.mx">muegano.com.mx</a><!-- REDES SOCIALES: agregar enlaces reales aquí --></div>
+ <div class="lg"><span>© 2026 Muégano. Todos los derechos reservados.</span><details><summary style="cursor:pointer">Aviso de privacidad</summary><p>Usamos los datos del formulario solo para responderte. Texto legal pendiente de revisión por Muégano.</p></details></div>
+</div></footer>
+
+<script>
+/* ANALÍTICA PENDIENTE: pegar aquí GTM/GA4/Meta Pixel con IDs reales. Los eventos ya se envían a dataLayer. */
+window.dataLayer=window.dataLayer||[];function track(e,p){window.dataLayer.push(Object.assign({event:e},p||{}))}
+(function(){
+var R=matchMedia('(prefers-reduced-motion: reduce)').matches,$=function(s,c){return[].slice.call((c||document).querySelectorAll(s))};
+$('.sp').forEach(function(el){var i=0;el.innerHTML=el.innerHTML.replace(/(<[^>]+>)|([^<\s]+)/g,function(m,t,w){return t?t:'<span class="w"><span style="--i:'+(i++)+'">'+w+'</span></span> '});el.classList.add('rv0')});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+$('.sp,.rv').forEach(function(e){io.observe(e)});setTimeout(function(){document.body.classList.add('ok');$('#h').forEach(function(h){h.classList.add('in')});$('.sp').slice(0,1).forEach(function(s){s.classList.add('in')})},60);
+// declaración por palabras
+var st=document.getElementById('stm');st.innerHTML=st.textContent.split(' ').map(function(w){return'<span>'+w+'</span>'}).join(' ');var sw=$('span',st);
+// marcas
+var N=[['CFE','PEMEX','GRUPO MODELO','COCA-COLA','URBANIA','GRUPO INTEGRA','DENTALFLOX','GIGANTE GRUPO','STA. MARÍA'],['KFC','RENAULT','PRODIET','K292','SIDRAL MUNDET','ZARA','CHILI’S','APOLO','SU-FRIDA'],['BOXING CLUB','SNOB SALÓN','LECHESAN','GRUPO JUMEX','DENTALIA','REBI','ARMANI EXCHANGE','BOSCH']],rows=$('#mq div');
+rows.forEach(function(r,i){var h='';for(var k=0;k<3;k++)N[i].forEach(function(n){h+='<span>'+n+'</span>'});r.innerHTML=h});
+// proceso
+var ap=$('#ap li'),api=document.getElementById('api'),apE=document.getElementById('ap');
+function sc(){
+ var y=scrollY,H=document.documentElement.scrollHeight-innerHeight;document.getElementById('bar').style.transform='scaleX('+(y/H)+')';
+ var r=st.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height+innerHeight*.3)));sw.forEach(function(w,i){w.classList.toggle('on',R||i/sw.length<p)});
+ var m=document.getElementById('mq').getBoundingClientRect(),q=innerHeight-m.top;rows.forEach(function(x,i){var d=i%2?1:-1,b=d>0?-x.scrollWidth/3:0;x.style.transform='translateX('+(b+(R?0:d*q*.55)).toFixed(1)+'px)'});
+ var a=apE.getBoundingClientRect(),f=Math.min(1,Math.max(0,(innerHeight*.6-a.top)/a.height));api.style.height=(f*(a.height-12))+'px';ap.forEach(function(l){l.classList.toggle('on',l.getBoundingClientRect().top<innerHeight*.6)});
+ if(!R)document.getElementById('stage').style.transform='translateY('+(y*.05)+'px)';
+}
+addEventListener('scroll',sc,{passive:true});addEventListener('resize',sc);sc();
+// ojos
+var scr=document.getElementById('scr'),eL=document.getElementById('eL'),eR=document.getElementById('eR'),tx=0,ty=0,cx=0,cy=0;
+addEventListener('pointermove',function(e){var r=scr.getBoundingClientRect(),dx=(e.clientX-r.left-r.width/2)/(innerWidth*.5),dy=(e.clientY-r.top-r.height/2)/(innerHeight*.5);tx=Math.max(-1,Math.min(1,dx))*34;ty=Math.max(-1,Math.min(1,dy))*26},{passive:true});
+(function t(){cx+=(tx-cx)*.14;cy+=(ty-cy)*.14;var v='translate('+cx.toFixed(2)+' '+cy.toFixed(2)+')';eL.setAttribute('transform',v);eR.setAttribute('transform',v);requestAnimationFrame(t)})();
+if(!R)setInterval(function(){[eL,eR].forEach(function(e){e.setAttribute('ry','3')});setTimeout(function(){[eL,eR].forEach(function(e){e.setAttribute('ry','29')})},130)},4300);
+// cursor y magnético
+if(matchMedia('(pointer:fine)').matches&&!R){var cu=document.getElementById('cu'),px=0,py=0,mx=0,my=0;
+ addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY;cu.classList.toggle('h',!!e.target.closest('a,button,summary,input,select,textarea'))},{passive:true});
+ (function l(){px+=(mx-px)*.2;py+=(my-py)*.2;cu.style.transform='translate('+px+'px,'+py+'px)';requestAnimationFrame(l)})();
+ $('.mag').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.25)+'px,'+((e.clientY-r.top-r.height/2)*.35)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})})}
+// menú
+var mb=document.getElementById('mb'),mn=document.getElementById('menu');
+function tg(o){mn.classList.toggle('on',o);mb.setAttribute('aria-expanded',o);mb.textContent=o?'Cerrar':'Menú'}
+mb.onclick=function(){tg(!mn.classList.contains('on'))};$('a',mn).forEach(function(a){a.onclick=function(){tg(false)}});
+// trabajos
+var wk=$('.wk');wk.forEach(function(w){var b=$('button',w)[0];function op(){wk.forEach(function(x){x.classList.toggle('open',x===w);$('button',x)[0].setAttribute('aria-expanded',x===w)});track('work_open',{work:b.firstChild.textContent})}
+ b.addEventListener('click',op);if(matchMedia('(hover:hover)').matches)b.addEventListener('pointerenter',op)});
+// clics
+$('[data-track]').forEach(function(a){a.addEventListener('click',function(){if(a.id!=='sb')track(a.dataset.track)})});
+// formulario
+var fm=document.getElementById('fm');
+function er(id,eid,msg){var i=document.getElementById(id);document.getElementById(eid).textContent=msg;i.setAttribute('aria-invalid',!!msg);return!msg}
+fm.addEventListener('submit',function(e){e.preventDefault();
+ var n=document.getElementById('n').value.trim(),m=document.getElementById('m').value.trim(),g=document.getElementById('g').value.trim();
+ var a=er('n','en',n?'':'Escribe tu nombre.'),b=er('m','em',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)?'':'Escribe un correo válido.'),c=er('g','eg',g.length>9?'':'Cuéntanos un poco más (mínimo 10 caracteres).');
+ if(!(a&&b&&c)){track('form_error');return}
+ var sb=document.getElementById('sb');sb.disabled=true;sb.textContent='Enviando…';
+ setTimeout(function(){var s=document.getElementById('s').value,t=document.getElementById('t').value,body='Nombre: '+n+'\nCorreo: '+m+'\nTeléfono: '+t+'\nInterés: '+s+'\n\n'+g;
+  track('form_success',{interest:s});document.getElementById('cw').classList.add('sent');var ok=document.getElementById('ok');ok.focus();
+  location.href='mailto:contacto@muegano.network?subject='+encodeURIComponent('Proyecto: '+n)+'&body='+encodeURIComponent(body)},700)});
+})();
+</script>
+</body>
+</html>
